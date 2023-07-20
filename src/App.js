@@ -1,30 +1,31 @@
 import React from 'react';
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from './components/NewExpenses/NewExpense';
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
-      title: "Toilet Paper",
+      title: "TP",
       amount: 94.2,
       date: new Date("2021, 02, 30"),
     },
     { id: "e2", title: "TV", amount: 104.2, date: new Date("2021, 01, 10") },
     {
       id: "e3",
-      title: "Car Insurance",
+      title: "CI",
       amount: 99.2,
       date: new Date("2021, 03, 21"),
     },
     {
       id: "e4",
-      title: "Dishwasher",
+      title: "DW",
       amount: 976.2,
       date: new Date("2021, 09, 30"),
     },
     {
       id: "e5",
-      title: "Registration",
+      title: "RGSTN",
       amount: 80.45,
       date: new Date("2021, 07, 30"),
     },
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense/>
       <Expenses items={expenses}/>
     </div>
   );
