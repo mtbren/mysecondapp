@@ -8,7 +8,7 @@ function ExpenseItem(props) {
   // to be more precise, it registers it for a component instance
   // State is separated a per component instance basis
   const [title, setTitle] = useState(props.title);
-  console.log("Evaluated ExpenseItem with title = "+props.title);
+  //console.log("Evaluated ExpenseItem with title = "+props.title);
   const updateTitle = () => {
     setTitle("UPdated")
     console.log('Updated...');
